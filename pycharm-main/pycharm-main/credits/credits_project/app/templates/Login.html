@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{%load static%}
+
+{%block title%}Войти в учетную запись{%endblock%}
+{%block style%}
+<link rel = "stylesheet" href="{%static 'css/style_login.css'%}">
+{%endblock%}
+{%block content%}
+<div class="wrapper">
+    <form method="post">
+        <input type="password" placeholder="Введите логин">
+        <input type="password" placeholder="Введите пароль">
+        <button type="submit">Войти</button>
+    </form>
+</div>
+{%endblock%}
